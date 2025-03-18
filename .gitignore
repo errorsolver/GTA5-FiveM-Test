@@ -39,3 +39,9 @@ luac.out
 *.x86_64
 *.hex
 
+# FiveM
+server.cfg
+server.key
+txData/
+privkey.pem
+cert.pem
