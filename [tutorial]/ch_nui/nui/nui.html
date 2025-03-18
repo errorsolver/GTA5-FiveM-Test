@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <img src="images/Test.gif" alt="" class="profile-photo">
+
+    <div class="container">
+        <div class="profile">
+            <h1 class="name">Teleportation</h1>
+        </div>
+
+        <div class="input-coords">
+            <label for="destination-x">X: </label>
+            <input type="text" class="input" placeholder="Destination X" id="destination-x">
+            <label for="destination-y">Y: </label>
+            <input type="text" class="input" placeholder="Destination Y" id="destination-y">
+            <label for="destination-z">Z: </label>
+            <input type="text" class="input" placeholder="Destination Z" id="destination-z">
+            
+            <button id="destination-submit">Teleport</button>
+            <button id="destination-cancel">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
