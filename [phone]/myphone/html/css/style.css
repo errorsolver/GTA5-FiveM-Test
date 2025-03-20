@@ -1,0 +1,200 @@
+:root{
+    --phone-width: 320px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    user-select: none;
+}
+
+#phone {
+    position: relative;
+    /* make button absolute to phone */
+    aspect-ratio: 9 / 19.5;
+    width: var(--phone-width);
+    padding: 0.6em;
+    border-radius: 2em;
+
+    background-color: black;
+}
+
+#screen {
+    display: grid;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.6em;
+
+    grid-template-rows: min-content 1fr min-content;
+
+    background-color: #fff;
+}
+
+#wrap-btn {
+    position: absolute;
+
+    top: 10em;
+    right: -0.3em;
+
+    margin-top: 0.6em;
+}
+
+#wrap-btn :first-child {
+    margin-bottom: 2em;
+}
+
+#wrap-btn :nth-child(n + 2) {
+    margin-bottom: 0.5em;
+}
+
+#wrap-btn :last-child {
+    margin-bottom: 0;
+}
+
+.phone-btn {
+    width: .3em;
+    height: 3em;
+
+    position: relative;
+
+    border-radius: 0 0.55em 0.55em 0;
+    background-color: black;
+}
+
+#status-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 2em;
+    /* padding-top: 5px; */
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    /* padding-bottom: 4px; */
+
+    background-color: rgba(198, 198, 198, 0.5);
+
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+#status-bar * {
+    align-items: center;
+}
+
+#status-bar * {
+    display: flex;
+    flex-direction: row;
+}
+
+#notch {
+    position: absolute;
+    top: 0.3em;
+    left: 50%;
+    width: 5em;
+    height: 1.5em;
+    padding: 7px;
+
+    border-radius: 10em;
+    translate: -50%;
+
+    background-color: black;
+}
+
+#notch #camera {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    /* margin: 0.2em; */
+
+    border-radius: 50%;
+    background-color: rgb(86, 86, 86);
+}
+
+main {
+    position: relative;
+    padding: 0.5em;
+    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main-time {
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+
+    text-align: center;
+    line-height: 2.2em;
+}
+
+#main-time>#big-time {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+#main-time>#big-date {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#wrap-apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5em;
+}
+
+#dock-line {
+    width: 96%;
+    margin: auto;
+    height: 2px;
+    
+    border: none;
+    background-color: #0000002b;
+}
+
+#wrap-dock {
+    display: grid;
+    width: 100%;
+
+    bottom: 1em;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5em;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.app .app-icon {
+    display: flex;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.05em;
+}
+
+.app .app-title {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer {
+    padding: 0.5em;
+}
+
+#home-btn {
+    position: absolute;
+}

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPhone 16</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="phone">
         <div id="screen">
@@ -16,40 +19,179 @@
                 </div>
                 <div id="status-bar-right">
                     <div id="signal">📶</div>
-                    <div id="little-time">12:00</div>
+                    <div id="little-time">10:59</div>
                     <div id="battery">🔋</div>
                 </div>
             </div>
             <div id="notch">
-                <div id="camera">🟣</div>
+                <div id="camera"></div>
             </div>
-            <div id="main-time">
-                <div id="big-time">10:59</div>
-                <div id="big-date">Monday, 1 January</div>
-            </div>
-            <div id="wrap-apps">
-                <div class="app">📞</div>
-                <div class="app">📧</div>
-                <div class="app">📅</div>
-                <div class="app">📷</div>
-                <div class="app">🎵</div>
-                <div class="app">📂</div>
-                <div class="app">🌐</div>
-                <div class="app">📺</div>
-                <div class="app">🎮</div>
-            </div>
-            <div id="wrap-dock">
-                <div class="dock">📞</div>
-                <div class="dock">📧</div>
-                <div class="dock">📅</div>
-                <div class="dock">📷</div>
-            </div>
-
+            <main>
+                <div id="main-time">
+                    <div id="big-time">10:59</div>
+                    <div id="big-date">Monday, 1 January</div>
+                </div>
+                <div id="wrap-apps">
+                    <div class="app">
+                        <div class="app-icon">
+                            📞
+                        </div>
+                        <div class="app-title">
+                            Phone
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📧
+                        </div>
+                        <div class="app-title">
+                            Email
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📅
+                        </div>
+                        <div class="app-title">
+                            Calendar
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📷
+                        </div>
+                        <div class="app-title">
+                            Camera
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            🎵
+                        </div>
+                        <div class="app-title">
+                            Music
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📂
+                        </div>
+                        <div class="app-title">
+                            Files
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            🌐
+                        </div>
+                        <div class="app-title">
+                            Browser
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📺
+                        </div>
+                        <div class="app-title">
+                            TV
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            🎮
+                        </div>
+                        <div class="app-title">
+                            Games
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📟
+                        </div>
+                        <div class="app-title">
+                            Pager
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📈
+                        </div>
+                        <div class="app-title">
+                            Stocks
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📖
+                        </div>
+                        <div class="app-title">
+                            Books
+                        </div>
+                    </div>
+                    <!-- <div class="app">
+                        <div class="app-icon">
+                            📰
+                        </div>
+                        <div class="app-title">
+                            News
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📦
+                        </div>
+                        <div class="app-title">
+                            Packages
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📌
+                        </div>
+                        <div class="app-title">
+                            Pins
+                        </div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">
+                            📋
+                        </div>
+                        <div class="app-title">
+                            Notes
+                        </div>
+                    </div> -->
+                </div>
+            </main>
+            <hr id="dock-line">
+            <footer>
+                <div id="wrap-dock">
+                    <div class="app">
+                        <div class="app-icon">📞</div>
+                        <div class="app-title">Phone</div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">📧</div>
+                        <div class="app-title">Email</div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">📅</div>
+                        <div class="app-title">Calendar</div>
+                    </div>
+                    <div class="app">
+                        <div class="app-icon">📷</div>
+                        <div class="app-title">Camera</div>
+                    </div>
+                </div>
+                <div id="home-btn"></div>
+            </footer>
         </div>
         <div id="wrap-btn">
-            <div id="power-btn"></div>
-            <div id="volume-btn"></div>
+            <div id="power-btn" class="phone-btn"></div>
+            <div id="volume-up-btn" class="phone-btn"></div>
+            <div id="volume-down-btn" class="phone-btn"></div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
